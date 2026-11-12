@@ -289,7 +289,7 @@ document.querySelectorAll("form.wl").forEach((f, n) => {
           body: JSON.stringify({
             email,
             device,
-            product: f.dataset.product || "screensalt",
+            product: f.dataset.product || "doomquit",
             page: location.pathname,
           }),
         });
