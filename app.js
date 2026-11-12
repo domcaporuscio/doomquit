@@ -1,5 +1,5 @@
 // ---- CONFIG: paste your Formspree (or similar) endpoint here, e.g. "https://formspree.io/f/abcdwxyz"
-const WAITLIST_ENDPOINT = "";
+const WAITLIST_ENDPOINT = "https://formspree.io/f/xoedqkqa";
 document.querySelectorAll("form.wl").forEach(f=>{
   f.addEventListener("submit",async e=>{
     e.preventDefault();
