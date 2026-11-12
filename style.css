@@ -44,3 +44,11 @@ header.nav{display:flex;justify-content:space-between;align-items:center;padding
 .msg{margin:12px 0 0;min-height:1.5em;font-weight:600}.msg.err{color:#c2410c}
 footer{border-top:1px solid var(--line);padding:32px 24px;text-align:center;color:var(--mute);font-size:.95rem}
 @media(max-width:760px){.hero,.band .wrap,.pdp,.facts{grid-template-columns:1fr}.hero{padding-top:16px}.pdp .stage{padding:32px 64px}}
+.field{margin-bottom:10px}
+.combo{position:relative}
+.combo input{width:100%;padding:14px 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.combo ul{position:absolute;z-index:20;left:0;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:var(--card);border:1px solid var(--line);border-radius:16px;max-height:260px;overflow:auto;box-shadow:0 16px 32px -12px rgba(15,42,51,.35)}
+.combo li{padding:10px 14px;border-radius:10px;cursor:pointer}
+.combo li[aria-selected=true],.combo li:hover{background:var(--accent);color:var(--accent-ink)}
+.combo li small{opacity:.7;margin-left:6px}
+.combo ul[hidden]{display:none}
